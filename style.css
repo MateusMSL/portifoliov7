@@ -1,0 +1,467 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    overflow-x: hidden;
+}
+.checkbox{ 
+    opacity: 0;
+    position: absolute;
+}
+
+
+#theme{
+
+    padding-top: 30px;
+    padding-right: 30px;
+    
+}
+.label{
+
+    float: right;
+    background-color: #000;
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+
+    transform: scale(1.3);
+
+}
+
+.label .bola{
+
+    background-color: rgb(175, 253, 186);
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 22px;
+    width: 22px;
+
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .bola {
+
+    transform: translateX(24px);
+}
+
+
+
+#language{
+
+        float: right;
+        padding-right: 30px;
+
+    
+}
+
+
+
+
+
+
+/* BACKGROUND GRADIENTE E WAVES*/
+
+#background{
+    height: 650px;
+    background: linear-gradient(180deg, #44da51 26%, #25689e 100%);
+    transition: 0.2s linear;
+
+}
+
+#wave_bottom{
+
+    float: left;
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(img/waves/tilt.svg);
+    transform: rotateX(3.142rad);
+    height: 230px;
+    
+    
+}
+/* BACKGROUND GRADIENTE E WAVES*/
+
+
+
+    #part_01{
+
+        float: left;
+    }
+
+/* Apresentação */
+
+    #welcome{
+        
+        margin-left: 30px;
+        color: rgb(43, 85, 152);
+        font-size: 25px;
+        font-weight: 800;
+        height: 40px;
+        
+    }
+
+    #nome{
+        margin-left: 30px;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        font-weight: 450;
+        height: 40px;
+        }
+
+/* Apresentação */
+
+
+
+
+
+
+
+
+
+/* Competencias */
+#part_02{
+
+    
+    float: left;
+    height: 80px;
+    display: flex;
+    align-items: left;
+}
+
+.wrapper{
+    float: left;
+    display: inline-flex;
+}
+.wrapper .texto-base{
+    margin-top: 10px;
+    margin-left: 30px;
+    color: #fff;
+    font-size: 30px;
+    float: left;
+    font-weight: 700;
+    
+}
+.wrapper .texto-secundario{
+    margin-top: 10px;
+    height: 42px;
+    float: left;
+    line-height: 50px;
+    overflow: hidden; 
+    color: rgb(45, 86, 139);
+    
+    
+}
+
+.texto-secundario li{
+    
+    list-style: none;
+    font-size: 37px;
+    font-weight: 700;
+    position: relative;
+    top: 0;
+    animation: slide 7s steps(7) infinite;
+}
+@keyframes slide {
+    100%{
+        top: -360px;
+    }
+}
+
+.texto-secundario li span{
+    position: relative;
+}
+
+.texto-secundario li span::after{
+    
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #44da51;
+    border-left: 2px solid rgb(255, 255, 255);
+    animation: typing 1s steps(11) infinite;
+}
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 20px;
+    }
+}
+
+/* Competencias */
+
+
+
+
+
+
+/* Informação */
+
+#part_03{
+    
+    float: left;
+    height: 159px;
+    margin-top: 10px;
+    margin-left: 30px;
+
+}
+    #informativo{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+/* Informação */
+
+
+/* Botoões */
+
+#part_04{
+
+    height: 45px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 30px;
+    
+
+}
+#btn_sobremim{ 
+    float: left;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+
+#btn_projetos{
+    margin-left: 15px;
+    float: left; 
+    border: 2px solid #fff;
+}
+/* Botoões */
+
+/* Footer */
+
+#footer{
+
+    float: left;
+    margin-top: 40px;
+    background-color: #096a3b7b;
+    height: 30px;
+    width: 100%;
+}
+
+#Copyrith{
+    float: left;
+    color: #fff;
+}
+
+#Recursos_utilizados{
+
+    float: right;
+    height: 100%;
+    width: 10.5%;
+    color: #fff;
+}
+
+#Recursos_utilizados:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #95ffc1;
+    
+}
+
+/* Footer */
+
+
+
+
+
+
+
+
+
+/* If the screen size is 600px wide or less, hide the element */
+@media only screen and (max-width: 319px) {
+    *{
+      display: none;
+    }
+
+    
+        
+}
+
+@media (min-width: 320px) and (max-width: 428px) {
+
+
+    #background{
+        height: 1100px;
+    }
+
+    
+    #background{
+
+        background: linear-gradient(180deg, #a5cc82 46%, #00467f 80%);
+
+    }
+    #welcome{
+        margin-top: 10px;
+        margin-left: 10px;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 500;
+        height: 40px;
+        text-align: center;
+        
+    }
+
+    #nome{
+        margin-top: 40px;
+        margin-left: 10px;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 200;
+        height: 60px;
+        text-align: center;
+        }
+
+
+    .wrapper .texto-base{
+        margin-top: 30px;
+        margin-left: 5px;
+        color: #fff;
+        font-size: 25px;
+        float: left;
+        font-weight: 500;
+        text-align: center;
+    }
+    .wrapper .texto-secundario{
+        
+        margin-top: 30px;
+        margin-left: 50px;
+        height: 44px;
+        float: left;
+        line-height: 50px;
+        overflow: hidden;
+        text-align: center;
+        
+        
+    }
+
+    .wrapper{
+
+        display: block;
+
+    }
+
+    #part_03{
+        float: left;
+        height: 308px;
+        margin-top: 180px;
+    
+    }
+        #informativo{
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            margin-left: 0px;
+        }
+
+        #part_04{
+            float: left;
+            margin-top: 30px;
+            margin-left: 0px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        #btn_sobremim{ 
+            float: right;
+            margin-left: 0px;
+            cursor: pointer;
+            border: 2px solid #fff;
+        }
+
+
+        #btn_projetos{
+            margin-left: 0px;
+            border: 2px solid #fff;
+        }
+        
+
+        #wave_bottom{
+
+            float: none;
+            background-position: bottom;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url(img/waves/tilt.svg);
+            height: 281px;
+            margin-top: 815px;
+            
+        }
+        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: Font_01;
+    src: url(fonts/Fluff.ttf);
+    }
+
+@font-face {
+    font-family: Font_02;
+    src: url(fonts/Givonic-Regular.otf);
+    }
+    
+    ::selection {
+    color: rgb(85, 85, 85);
+    background: rgb(255, 255, 255);
+    }
+    
+    
+    ::-webkit-scrollbar {
+    width: 8px;
+    background-color: #487091;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    background: #affdba;
+    border-radius: 20px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+    background: rgb(101, 172, 127);
+    }

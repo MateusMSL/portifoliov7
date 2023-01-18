@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    
+   <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Kute -->
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.0.0/kute.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2db99d343f.js" crossorigin="anonymous"></script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <link href="style_projetos.css" rel="stylesheet">
+    <link href="style_sobre.css" rel="stylesheet">
+
+    <script src="script.js"> </script>
+    <title> Seja Bem Vindo(a)!! </title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+        <body id="dark">
+
+        
+            <main class="col-lg-12" id="background"> <!-- Página Principal-->
+                
+
+                <div id="aviso_projetos"> <!-- Aviso de redirecionamento -->
+                    <section class="alert alert-success col-lg-12 col-12" role="alert">
+                    <i class="fa-sharp fa-solid fa-circle-info"></i> Você pode acessar o site de alguns projetos clicando em sua foto
+                    </section>
+                </div>        
+
+                <div id="theme"> <!-- Troca de Tema Claro/Escuro -->
+
+                    <input type="checkbox" class="checkbox" id="chk" onclick="alterar_tema()"/> 
+                    
+                    <label class="label" for="chk">
+                        <i class="fa-solid fa-moon fa-beat" style="color: #ffffff;"></i> 
+                        <i class="fa-regular fa-sun fa-beat" style="color: #ffffff;"></i> 
+                        <div class="bola"> </div> 
+                    </label>
+                </div>
+
+                
+                <div class="col-lg-4 col-12" id="part_01"> <!-- Página Principal (Textos iniciais e competencias) -->
+                    <section id="welcome" data-aos="fade-right" data-aos-duration="500" > <p> Bem vindo ao meu portifólio! </p></section>
+                    <section id="nome" data-aos="fade-right" data-aos-duration="1000"> <p> Meu nome é Mateus </p></section>
+                </div>
+            
+                <div class="col-lg-9 col-12" id="part_02"> 
+                    <section class="wrapper">
+                            <div class="texto-base col-lg-9" data-aos="fade-right"  data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500" > Sou um desenvolvedor com conhecimentos em: </div>
+                            
+                            <ul class="texto-secundario col-lg-3" data-aos="zoom-in" data-aos-duration="2000"> 
+                                <li id="Conhecimento_01"> <span> HTML5 </span></li>
+                                <li id="Conhecimento_02"> <span> CSS3 </span></li>
+                                <li id="Conhecimento_03"> <span> JavaScript </span></li>
+                                <li id="Conhecimento_04"> <span> JAVA </span></li>
+                                <li id="Conhecimento_05"> <span> C++ </span></li>
+                                <li id="Conhecimento_06"> <span> MySQL </span></li>
+                                <li id="Conhecimento_07"> <span> Bootstrap </span></li>
+                            </ul>
+                    </section>
+                </div>
+                        
+                <div class="col-lg-11 col-10" id="part_03" data-aos="fade-right" data-aos-duration="2500">
+                    <section id="informativo"> Caso tenha interesse, clique em "Sobre mim" <br>
+                            serão exibidas algumas informações relacionadas ao meu perfil profissional....  <br> <br> 
+                            ou clique em "Projetos" <br>
+                            onde serão exibidos meus principais projetos.  </section>
+                
+                </div>
+
+            
+                <div class="col-lg-3 col-12" id="part_04">  <!-- Botões de ativação de abas de projetos e sobre mim -->
+                    <button onclick="ativar_sobremim()" data-aos="fade-up" id="btn_sobremim" type="button" class="btn btn-light" > <i class="fa-solid fa-user-tag fa-1xl fa-beat-fade" style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.075;"> </i> Sobre Mim</button> 
+                    <button onclick="ativar_projetos()" data-aos="fade-up" id="btn_projetos" type="button" class="btn btn-light" >Projetos <i class="fa-solid fa-code fa-shake"></i> </button> 
+                </div>
+            
+                <section class="col-lg-12" id="wave_bottom"></section>  <!-- Corte de Guia -->
+
+                
+            </main>
+
+           
+
+            <main id="background_sobre"> <!-- Aba Sobre Mim --> 
+
+                <section class="col-lg-12 Titulo_Main" > <p> Sobre Mim </p></section>
+                
+                <section class="col-lg-12" id="Minha_foto"> </section>
+
+                <article class="col-lg-12" id="Sobre"> 
+                    <p> Como você já deve ter lido acima, meu nome é Mateus Meira e sou um desenvolvedor. <br>
+                        Iniciei meus estudos de programação no curso técnico de desenvolvimento de sistemas no SENAI. <br> desde então tenho aprimorado meus conhecimentos tanto nas aulas quanto fora delas. <br> <br>
+                        Eu sempre tive interesse por todo tipo de tecnologia desde criança e vi na programação a oportunidade de criar sites e softwares incriveis capazes de satisfazer tanto a mim como criador, quanto aos usuários que iriam utilizar o que eu desenvolvi.
+                    </p>
+                    <p> Utilizo Computadores desde muito jovem, e sempre fiz formatação, configuração e afins relacionados a informatica. porem, dei inicio em meus estudos na área da programação em 2021 e desde então tenho aprendido mais linguagens, tecnologias e aprimorado o que já sei! </p>
+                    <p> Atualmente estou em busca de estágio relacionado a TI para obter experiência de mercado. <br> 
+                        tenho mais interesse e afinidade por operar em setores de FrontEnd, apesar de me considerar um aspirante a desenvolvedor FullStack, já que tambem gosto de resolver problemas do BackEnd! 
+                    </p>
+                </article>
+
+                <article class="col-lg-12" id="Habilidades">
+                    <section class="col-lg-12 Titulo_Main" > <p> Habilidades </p></section>
+                
+                        <section class="col-lg-12 Titulo_Second" > <p> Back-End </p></section>
+                            <div class="col-lg-4 Space">
+                            <section id="skill_01"></section>
+                            </div>
+        
+                            <div class="col-lg-4 Space">
+                            <section id="skill_02"></section>
+                            </div>
+        
+                            <div class="col-lg-4 Space">
+                            <section id="skill_03"></section>
+                            </div>
+    
+                        <section class="col-lg-12 Titulo_Second" > <p> Front-End </p></section>
+                            <div class="col-lg-4 Space">
+                            <section id="skill_04"></section>
+                            </div>
+        
+                            <div class="col-lg-4 Space">
+                            <section id="skill_05"></section>
+                            </div>
+        
+                            <div class="col-lg-4 Space">
+                            <section id="skill_06"></section>
+                            </div>
+
+                        <section class="col-lg-12 Titulo_Second" > <p> Banco de Dados </p></section>
+                            <div class="col-lg-12 Space">
+                            <section id="skill_07"></section>
+                            </div>
+                        
+
+                </article>
+
+                <article class="col-lg-12 " id="Fale_comigo"> 
+                    <section class="col-lg-12 Titulo_Main" > <p> Contato </p></section>
+                    
+                    <div class="col-lg-4 contato_bola">
+                        <section id="bola-01"></section>
+                    </div>
+
+                    <div class="col-lg-4 contato_bola">
+                        <section id="bola-02"></section>
+                    </div>
+                    
+                    <div class="col-lg-4 contato_bola">
+                        <section id="bola-03"></section>
+                    </div>
+                </article> 
+
+                <article>
+                
+                    <section class="col-lg-12 Titulo_Main"> <p> Me Envie um Email! </p></section>
+                
+                </article>
+
+
+                <div class="col-lg-1 col-2" id="return_icon_section">
+                    <section onclick="return_page()" id="return_icon"> <i class="fa-solid fa-angles-up fa-2xl fa-bounce"> </i> </section>
+                </div>
+                
+                <footer id="footer"> 
+                    <p id="Copyrith"> Mateus Meira ~ 2023 © </p>
+                    <p id="Recursos_utilizados"> Recursos Utilizados </p>
+                </footer>
+            </main>
+
+            
+            <main id="background_projetos"> <!-- Aba de Projetos -->
+
+                <section id="Titulo_Projetos"class="col-lg-12"> <p> PROJETOS </p></section>
+               
+                <article id="select_projects"> 
+
+                    <i id="left_project" class="fa-solid fa-chevron-left fa-2xl" onclick="retornar_projeto()"></i>
+                    <i id="right_project" class="fa-solid fa-chevron-right fa-2xl" onclick="avancar_projeto()"></i>
+
+
+                    <div class="template_projeto" id="translateproject1">
+                        <section class="header_projeto" id="header_01">
+                            <div class="repositorio_icon" onclick="chamar_link_01()"> </div> 
+                            
+                            <div class="html_icon"> </div> 
+                            <div class="css_icon"> </div> 
+                            <div class="js_icon"> </div> 
+                            <div class="mysql_icon"> </div> 
+                            <div class="php_icon"> </div> 
+                        </section>
+                        <section class="descricao_projeto" id="desc_project_01"> 
+                            <p> Site de feedbacks e avaliações de livros </p>
+                            <button type="button" class="view_button"> 
+                                <i class="fa-solid fa-book fa-bounce"></i>
+                                <i class="fa-solid fa-caret-down fa-bounce"></i>
+                                 Visualizar
+                            </button>
+                        </section>
+                    </div>
+
+                    <div class="template_projeto" id="translateproject2">
+                        <section class="header_projeto" id="header_02">
+                            <div class="repositorio_icon" onclick="chamar_link_04()"> </div> 
+                            
+                            
+                            <div class="html_icon"> </div> 
+                            <div class="css_icon"> </div> 
+                            <div class="js_icon"> </div> 
+                        </section>
+                        <section class="descricao_projeto" id="desc_project_02"> 
+                            <p> Plataforma de vendas de mini-cursos e video-aulas. </p>
+                            <button type="button" class="view_button"> 
+                                <i class="fa-solid fa-book fa-bounce"></i>
+                                <i class="fa-solid fa-caret-down fa-bounce"></i>
+                                 Visualizar
+                            </button>
+                        </section>
+                    </div>
+
+                    <div class="template_projeto" id="translateproject3">
+                        <section class="header_projeto" id="header_03">
+                            <div class="repositorio_icon" onclick="chamar_link_02()"> </div>
+                            
+                            <div class="cplusplus_icon"> </div> 
+                        </section>
+                        <section class="descricao_projeto" id="desc_project_03"> 
+                            <p> Sistema de Estoque de Hardwares e Perifericos </p>
+                            <button type="button" class="view_button"> 
+                                <i class="fa-solid fa-book fa-bounce"></i>
+                                <i class="fa-solid fa-caret-down fa-bounce"></i>
+                                 Visualizar
+                            </button>
+                        </section>
+                    </div>
+
+                    <div class="template_projeto" id="translateproject4">
+                        <section class="header_projeto" id="header_04">
+                            <div class="repositorio_icon" onclick="chamar_link_03()"> </div>  
+                            
+                            <div class="java_icon"> </div> 
+                        </section>
+                        <section class="descricao_projeto" id="desc_project_04"> 
+                            <p> Sistema de Venda e Aluguel de Veiculos </p>
+                            <button type="button" class="view_button"> 
+                                <i class="fa-solid fa-book fa-bounce"></i>
+                                <i class="fa-solid fa-caret-down fa-bounce"></i>
+                                 Visualizar
+                            </button>
+                        </section>
+                    </div>
+
+                    
+                    
+                </article>
+
+                <article id="info_do_projeto">
+
+                </article>
+            
+                <!-- <footer id="footer"> 
+                    <p id="Copyrith"> Mateus Meira ~ 2023 © </p>
+                    <p id="Recursos_utilizados"> Recursos Utilizados </p>
+                </footer> -->
+            
+            </main>
+        
+
+            
+            <script>
+                AOS.init();
+            </script>
+
+        </body>
+    </html>

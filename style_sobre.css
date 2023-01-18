@@ -1,0 +1,186 @@
+#background_sobre{
+    height: auto;
+    transition: 2s;
+    display: none;
+}
+
+.Titulo_Main{
+
+    font-size: 60px;
+    text-align: center;
+    color: #1f517a;
+    font-family: Font_01;
+}
+
+.Titulo_Second{
+
+    font-size: 30px;
+    text-align: center;
+    color: #395f7e;
+    font-family: Font_01;
+    margin-bottom: 40px;
+}
+
+#Minha_foto{
+
+    width: 250px;
+    height: 250px;
+    border: 4px solid #00467f;
+    margin: 0 auto;
+    border-radius: 100%;
+    background-image: url(img/Social/Eu\ rs.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Sobre{
+
+    font-size: 25px;
+    text-align: center;
+    color: #00467f;
+    font-family: Font_01;
+    margin-bottom: 40px;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+#Habilidades{
+    height: auto;
+}
+
+
+#Fale_comigo{
+    height: 400px;
+    
+}
+
+.Space{
+
+    float: left;
+    height: auto;
+    margin-bottom: 80px;
+}
+
+#skill_01{
+
+    float: right;
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    border: 2px solid #00467f;
+}
+#skill_02{
+
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    border: 2px solid #00467f;
+}
+#skill_03{
+
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    border: 2px solid #00467f;
+}
+#skill_04{
+
+    float: right;
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    border: 2px solid #00467f;
+}
+#skill_05{
+
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    border: 2px solid #00467f;
+}
+
+#skill_06{
+
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    border: 2px solid #00467f;
+}
+
+#skill_07{
+
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    border: 2px solid #00467f;
+}
+
+
+.contato_bola{
+
+    float: left;
+    height: auto;
+}
+
+#bola-01{
+
+    transition: 1.4s;
+    border: 4px solid #00467f;
+    width: 150px;
+    height: 150px;
+    float: right;
+    border-radius: 100%;
+    cursor: pointer;
+    background-image: url(img/Social/Github.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#bola-02{
+
+    transition: 1.4s;
+    border: 4px solid #00467f;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 100%;
+    cursor: pointer;
+    background-image: url(img/Social/Instagram.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#bola-03{
+
+    transition: 1.4s;
+    border: 4px solid #00467f;
+    width: 150px;
+    height: 150px;
+    float: left;
+    border-radius: 100%;
+    cursor: pointer;
+    background-image: url(img/Social/Linkedin.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#bola-01:hover{
+    background-color: #a6ffd5
+}
+
+#bola-02:hover{
+    background-color: #a6ffd5
+}
+
+#bola-03:hover{
+    background-color: #a6ffd5
+}
